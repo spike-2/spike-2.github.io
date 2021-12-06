@@ -1,0 +1,150 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="ie=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name=author content="Spike Bot Maintainers ">
+<meta name=description content="Logging with SpikeKit is powered by Winston. This allows us to selectively log things that happen and better respond to errors in Spike. Do not use console.log or console.error to log messages. Instead, use one of the log levels below with the SpikeKit logger.
+Log Levels Log levels in SpikeKit go along with npm convention. Here are the log levels we use, in order of highest to lowest priority:
+   Level Function Call Meaning     Error spikeKit.">
+<meta name=keywords content="discord,bot,Logging,SpikeKit,Contributing">
+<meta name=robots content="noodp">
+<meta name=theme-color content>
+<link rel=canonical href=spike-2.github.io/docs/contributing/spikekit/logging/>
+<title>
+Logging :: Spike
+</title>
+<link href=https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css rel=stylesheet type=text/css>
+<link rel=stylesheet href=/spike-2.github.io/main.9b8c604ce610d9a2a001800934d5a0293651f3aaf91c5000762e01cbaffc6b90.css>
+<link rel=apple-touch-icon sizes=180x180 href=/spike-2.github.io/apple-touch-icon.png>
+<link rel=icon type=image/png sizes=32x32 href=/spike-2.github.io/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=/spike-2.github.io/favicon-16x16.png>
+<link rel=manifest href=/spike-2.github.io/site.webmanifest>
+<link rel=mask-icon href=/spike-2.github.io/safari-pinned-tab.svg color>
+<link rel="shortcut icon" href=/spike-2.github.io/favicon.ico>
+<meta name=msapplication-TileColor content>
+<meta name=theme-color content>
+<meta itemprop=name content="Logging">
+<meta itemprop=description content="Logging with SpikeKit is powered by Winston. This allows us to selectively log things that happen and better respond to errors in Spike. Do not use console.log or console.error to log messages. Instead, use one of the log levels below with the SpikeKit logger.
+Log Levels Log levels in SpikeKit go along with npm convention. Here are the log levels we use, in order of highest to lowest priority:
+   Level Function Call Meaning     Error spikeKit.">
+<meta itemprop=wordCount content="236"><meta itemprop=image content="spike-2.github.io">
+<meta itemprop=keywords content="Logging,SpikeKit,Contributing,">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="spike-2.github.io">
+<meta name=twitter:title content="Logging">
+<meta name=twitter:description content="Logging with SpikeKit is powered by Winston. This allows us to selectively log things that happen and better respond to errors in Spike. Do not use console.log or console.error to log messages. Instead, use one of the log levels below with the SpikeKit logger.
+Log Levels Log levels in SpikeKit go along with npm convention. Here are the log levels we use, in order of highest to lowest priority:
+   Level Function Call Meaning     Error spikeKit.">
+<meta property="article:section" content="Documentation">
+</head>
+<body>
+<div class=container>
+<header class=header>
+<span class=header__inner>
+<a href=/ style=text-decoration:none>
+<div class=logo>
+<span class=logo__mark>></span>
+<span class=logo__text>Spike-2</span>
+<span class=logo__cursor>
+</span>
+</div>
+</a>
+<span class=header__right>
+<nav class=menu>
+<ul class=menu__inner><li><a href=/spike-2.github.io/docs>Documentation</a></li>
+</ul>
+</nav>
+<span class=menu-trigger><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+</span>
+</span>
+</span>
+</header>
+<div class=content>
+<main class=post>
+<div class=post-info>
+</p>
+</div>
+<article>
+<h2 class=post-title><a href=spike-2.github.io/docs/contributing/spikekit/logging/>Logging</a></h2>
+<div class=post-content>
+<p>Logging with SpikeKit is powered by <a href=https://github.com/winstonjs/winston>Winston</a>. This allows us to selectively log things that happen and better respond to errors in Spike. <strong>Do not use <code>console.log</code> or <code>console.error</code> to log messages.</strong> Instead, use one of the log levels below with the SpikeKit logger.</p>
+<h2 id=log-levels>Log Levels</h2>
+<p>Log levels in SpikeKit go along with npm convention. Here are the log levels we use, in order of highest to lowest priority:</p>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Function Call</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Error</td>
+<td><code>spikeKit.logger.error(message)</code></td>
+<td>Something definitely went wrong with the bot.</td>
+</tr>
+<tr>
+<td>Warning</td>
+<td><code>spikeKit.logger.warn(message)</code></td>
+<td>Something went wrong. It might be user error, might be something wrong in the code, or might not be a real issue.</td>
+</tr>
+<tr>
+<td>Info</td>
+<td><code>spikeKit.logger.info(message)</code></td>
+<td>Something went wrong, but it was user error and didn&rsquo;t actually break anything. For example, invalid syntax for a command.</td>
+</tr>
+<tr>
+<td>Verbose</td>
+<td><code>spikeKit.logger.log("verbose", message)</code></td>
+<td>Info, but longer</td>
+</tr>
+<tr>
+<td>Debug</td>
+<td><code>spikeKit.logger.log("debug", message)</code></td>
+<td>This is only really useful if you&rsquo;re actively developing.</td>
+</tr>
+<tr>
+<td>Silly</td>
+<td><code>spikeKit.logger.log("silly", message)</code></td>
+<td>You wanted someone to maybe eventually see this, but they probably won&rsquo;t ever.</td>
+</tr>
+</tbody>
+</table>
+<h2 id=transports>Transports</h2>
+<p>Transports are how the Spike maintainers get these logged messages. Here are the current transports and the lowest priority they receive. Please keep these in mind while choosing between log levels.</p>
+<ul>
+<li>Console (the terminal where Spike is running): Info</li>
+<li>Discord (a special channel available to maintainers): Warning</li>
+<li>Combined Log (rotated monthly or at 20mb, whichever first; 3 files kept): Info</li>
+<li>Error Log (rotated monthly or at 20mb, whichever first; 3 files kept): Warning</li>
+</ul>
+</div>
+</article>
+<hr>
+<div class=post-info>
+<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83.0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7" y2="7"/></svg>
+<span class=tag><a href=spike-2.github.io/tags/logging/>Logging</a></span>
+<span class=tag><a href=spike-2.github.io/tags/spikekit/>SpikeKit</a></span>
+<span class=tag><a href=spike-2.github.io/tags/contributing/>Contributing</a></span>
+</p>
+<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>
+<span class=tag><a href=spike-2.github.io/categories/documentation/>Documentation</a></span>
+</p>
+</div>
+</main>
+</div>
+<footer class=footer>
+<div class=footer__inner>
+<div class=footer__content>
+<span>&copy; 2021</span>
+<span><a href=spike-2.github.io>Spike Bot Maintainers</a></span>
+<span><a target=_blank href=https://github.com/spike-2>GitHub</a></span>
+</div>
+</div>
+</footer>
+</div>
+<script type=text/javascript src=/spike-2.github.io/bundle.min.599099f1f14b78b657d524b28e10e0c5098e7cd46e9c7aed73d577068a276c3ff1bb234cbf29cb313333e83cf411727b43157c91ce5b809e2ffc81664614608e.js integrity="sha512-WZCZ8fFLeLZX1SSyjhDgxQmOfNRunHrtc9V3BoonbD/xuyNMvynLMTMz6Dz0EXJ7QxV8kc5bgJ4v/IFmRhRgjg=="></script>
+</body>
+</html>

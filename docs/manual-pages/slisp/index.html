@@ -1,0 +1,233 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="ie=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name=author content="Spike Bot Maintainers ">
+<meta name=description content="Slisp is still in development and will be available in a future release of Spike.
+ Slisp is a dialect of the Lisp Programming Language that runs directly from within Spike! This specific dialect is a decedent of eLispsis, which is a minimal Lisp dialect build on NodeJS.
+Lisp is a functional language. There are no variables. Everything is a function call. To learn a bit more about the basic syntax of Lisp, take a look at the Lisp Wikipedia Page.">
+<meta name=keywords content="discord,bot,Slisp,Manual Pages">
+<meta name=robots content="noodp">
+<meta name=theme-color content>
+<link rel=canonical href=spike-2.github.io/docs/manual-pages/slisp/>
+<title>
+Slisp :: Spike
+</title>
+<link href=https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css rel=stylesheet type=text/css>
+<link rel=stylesheet href=/spike-2.github.io/main.9b8c604ce610d9a2a001800934d5a0293651f3aaf91c5000762e01cbaffc6b90.css>
+<link rel=apple-touch-icon sizes=180x180 href=/spike-2.github.io/apple-touch-icon.png>
+<link rel=icon type=image/png sizes=32x32 href=/spike-2.github.io/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=/spike-2.github.io/favicon-16x16.png>
+<link rel=manifest href=/spike-2.github.io/site.webmanifest>
+<link rel=mask-icon href=/spike-2.github.io/safari-pinned-tab.svg color>
+<link rel="shortcut icon" href=/spike-2.github.io/favicon.ico>
+<meta name=msapplication-TileColor content>
+<meta name=theme-color content>
+<meta itemprop=name content="Slisp">
+<meta itemprop=description content="Slisp is still in development and will be available in a future release of Spike.
+ Slisp is a dialect of the Lisp Programming Language that runs directly from within Spike! This specific dialect is a decedent of eLispsis, which is a minimal Lisp dialect build on NodeJS.
+Lisp is a functional language. There are no variables. Everything is a function call. To learn a bit more about the basic syntax of Lisp, take a look at the Lisp Wikipedia Page.">
+<meta itemprop=wordCount content="379"><meta itemprop=image content="spike-2.github.io">
+<meta itemprop=keywords content="Slisp,Manual Pages,">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="spike-2.github.io">
+<meta name=twitter:title content="Slisp">
+<meta name=twitter:description content="Slisp is still in development and will be available in a future release of Spike.
+ Slisp is a dialect of the Lisp Programming Language that runs directly from within Spike! This specific dialect is a decedent of eLispsis, which is a minimal Lisp dialect build on NodeJS.
+Lisp is a functional language. There are no variables. Everything is a function call. To learn a bit more about the basic syntax of Lisp, take a look at the Lisp Wikipedia Page.">
+<meta property="article:section" content="Documentation">
+</head>
+<body>
+<div class=container>
+<header class=header>
+<span class=header__inner>
+<a href=/ style=text-decoration:none>
+<div class=logo>
+<span class=logo__mark>></span>
+<span class=logo__text>Spike-2</span>
+<span class=logo__cursor>
+</span>
+</div>
+</a>
+<span class=header__right>
+<nav class=menu>
+<ul class=menu__inner><li><a href=/spike-2.github.io/docs>Documentation</a></li>
+</ul>
+</nav>
+<span class=menu-trigger><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+</span>
+</span>
+</span>
+</header>
+<div class=content>
+<main class=post>
+<div class=post-info>
+</p>
+</div>
+<article>
+<h2 class=post-title><a href=spike-2.github.io/docs/manual-pages/slisp/>Slisp</a></h2>
+<div class=post-content>
+<p><strong>Slisp is still in development and will be available in a future release of Spike.</strong></p>
+<hr>
+<p>Slisp is a dialect of the <a href=https://en.wikipedia.org/wiki/Lisp_(programming_language)>Lisp Programming Language</a> that runs directly from within Spike! This specific dialect is a decedent of <a href=https://github.com/jwMaxwell/eLispsis>eLispsis</a>, which is a minimal Lisp dialect build on NodeJS.</p>
+<p>Lisp is a functional language. There are no variables. Everything is a function call. To learn a bit more about the basic syntax of Lisp, take a look at the <a href=https://en.wikipedia.org/wiki/Lisp_(programming_language)#Syntax_and_semantics>Lisp Wikipedia Page</a>.</p>
+<h2 id=message-format>Message Format</h2>
+<p>To properly run Spike Lisp code, run commands with the following format, noting the newlines as well.</p>
+<div class=highlight><pre tabindex=0 style=color:#ccc;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-md data-lang=md>$slisp
+<span style=color:#cd0000>```lisp
+</span><span style=color:#cd0000></span>(<span style=color:#00cdcd>code</span>)
+<span style=color:#cd0000>```</span>
+</code></pre></div><h2 id=available-operators>Available Operators</h2>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>+</code></td>
+<td>Adds all elements within a list</td>
+<td><code>(+ 1 2 3)</code> => <code>6</code></td>
+</tr>
+<tr>
+<td><code>-</code></td>
+<td>Subtracts all elements in a list, left to right</td>
+<td><code>(- 10 4 2)</code> => <code>4</code></td>
+</tr>
+<tr>
+<td><code>*</code></td>
+<td>Multiplies all elements in a list</td>
+<td><code>(* 2 3 4)</code> => <code>24</code></td>
+</tr>
+<tr>
+<td><code>/</code></td>
+<td>Divides all elements in a list, left to right</td>
+<td><code>(/ 144 12 3)</code> => <code>4</code></td>
+</tr>
+<tr>
+<td><code>%</code></td>
+<td>Modulo all elements in a list, left to right</td>
+<td><code>(% 15 20 3)</code> => <code>0</code></td>
+</tr>
+<tr>
+<td><code>^</code></td>
+<td>Returns x1 to the power of x2 &mldr; to the power of n</td>
+<td><code>(^ 2 2 2 2)</code> => <code>256</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id=available-functions>Available Functions</h2>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>atom</code></td>
+<td>Returns <code>t</code> if the given value is an atom</td>
+<td><code>(atom 'hi)</code> => <code>t</code></td>
+</tr>
+<tr>
+<td><code>quote</code></td>
+<td>returns a literal value rather than the evaluated value</td>
+<td><code>(quote (atom 'hi))</code> => <code>(atom 'hi)</code></td>
+</tr>
+<tr>
+<td><code>car</code></td>
+<td>Get first element of list.</td>
+<td><code>(car '(1 2 3 4))</code> => <code>1</code></td>
+</tr>
+<tr>
+<td><code>cdr</code></td>
+<td>Get list without first element.</td>
+<td><code>(cdr '(1 2 3 4))</code> => <code>(2 3 4)</code></td>
+</tr>
+<tr>
+<td><code>eq</code></td>
+<td>Returns true if the two values are equal</td>
+<td><code>(eq 'g 'r)</code> => <code>()</code></td>
+</tr>
+<tr>
+<td><code>cons</code></td>
+<td>Pushes an element to the front of a list</td>
+<td><code>(cons 'a '(b c d e))</code> => <code>(a b c d e)</code></td>
+</tr>
+<tr>
+<td><code>cond</code></td>
+<td>Creates a conditional statement</td>
+<td><code>(cond ('() (print "this is false") ('t (print "this is true"))</code> => <code>This is true</code></td>
+</tr>
+<tr>
+<td><code>print</code></td>
+<td>Print input</td>
+<td><code>(print '(1 2 3 4))</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id=definitions--declarations>Definitions / Declarations</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>set</code></td>
+<td>Define a variable</td>
+<td><code>(set x (cdr '(1 2 3 4)))</code></td>
+</tr>
+<tr>
+<td><code>setq</code></td>
+<td>Define a quoted variable</td>
+<td><code>(set x 25)</code></td>
+</tr>
+<tr>
+<td><code>defun</code></td>
+<td>Define a function</td>
+<td><code>(define sum (x y) (+ x y))</code></td>
+</tr>
+<tr>
+<td><code>lamdba</code></td>
+<td>Define a lambda (anonymous) function</td>
+<td><code>(lambda (x) (cdr x)) '(a b c)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</article>
+<hr>
+<div class=post-info>
+<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83.0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7" y2="7"/></svg>
+<span class=tag><a href=spike-2.github.io/tags/slisp/>Slisp</a></span>
+<span class=tag><a href=spike-2.github.io/tags/manual-pages/>Manual Pages</a></span>
+</p>
+<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>
+<span class=tag><a href=spike-2.github.io/categories/documentation/>Documentation</a></span>
+</p>
+</div>
+</main>
+</div>
+<footer class=footer>
+<div class=footer__inner>
+<div class=footer__content>
+<span>&copy; 2021</span>
+<span><a href=spike-2.github.io>Spike Bot Maintainers</a></span>
+<span><a target=_blank href=https://github.com/spike-2>GitHub</a></span>
+</div>
+</div>
+</footer>
+</div>
+<script type=text/javascript src=/spike-2.github.io/bundle.min.599099f1f14b78b657d524b28e10e0c5098e7cd46e9c7aed73d577068a276c3ff1bb234cbf29cb313333e83cf411727b43157c91ce5b809e2ffc81664614608e.js integrity="sha512-WZCZ8fFLeLZX1SSyjhDgxQmOfNRunHrtc9V3BoonbD/xuyNMvynLMTMz6Dz0EXJ7QxV8kc5bgJ4v/IFmRhRgjg=="></script>
+</body>
+</html>

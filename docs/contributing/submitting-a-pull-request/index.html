@@ -1,0 +1,147 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="ie=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name=author content="Spike Bot Maintainers ">
+<meta name=description content="So, you want to add a new feature in Spike, eh? It&amp;rsquo;s a fairly simple endeavor, but please be sure to follow instructions carefully so we get all the information we need to approve this feature!
+Before You Begin Work on an Existing Issue Please make sure that an Issue is in the Accepted/To-Do state before beginning work on it. You can check by looking at the Projects section of the sidebar for where it is on the Roadmap.">
+<meta name=keywords content="discord,bot,Submitting a Pull Request,Contributing">
+<meta name=robots content="noodp">
+<meta name=theme-color content>
+<link rel=canonical href=spike-2.github.io/docs/contributing/submitting-a-pull-request/>
+<title>
+Submitting a Pull Request :: Spike
+</title>
+<link href=https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css rel=stylesheet type=text/css>
+<link rel=stylesheet href=/spike-2.github.io/main.9b8c604ce610d9a2a001800934d5a0293651f3aaf91c5000762e01cbaffc6b90.css>
+<link rel=apple-touch-icon sizes=180x180 href=/spike-2.github.io/apple-touch-icon.png>
+<link rel=icon type=image/png sizes=32x32 href=/spike-2.github.io/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=/spike-2.github.io/favicon-16x16.png>
+<link rel=manifest href=/spike-2.github.io/site.webmanifest>
+<link rel=mask-icon href=/spike-2.github.io/safari-pinned-tab.svg color>
+<link rel="shortcut icon" href=/spike-2.github.io/favicon.ico>
+<meta name=msapplication-TileColor content>
+<meta name=theme-color content>
+<meta itemprop=name content="Submitting a Pull Request">
+<meta itemprop=description content="So, you want to add a new feature in Spike, eh? It&rsquo;s a fairly simple endeavor, but please be sure to follow instructions carefully so we get all the information we need to approve this feature!
+Before You Begin Work on an Existing Issue Please make sure that an Issue is in the Accepted/To-Do state before beginning work on it. You can check by looking at the Projects section of the sidebar for where it is on the Roadmap.">
+<meta itemprop=wordCount content="665"><meta itemprop=image content="spike-2.github.io">
+<meta itemprop=keywords content="Submitting a Pull Request,Contributing,">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="spike-2.github.io">
+<meta name=twitter:title content="Submitting a Pull Request">
+<meta name=twitter:description content="So, you want to add a new feature in Spike, eh? It&rsquo;s a fairly simple endeavor, but please be sure to follow instructions carefully so we get all the information we need to approve this feature!
+Before You Begin Work on an Existing Issue Please make sure that an Issue is in the Accepted/To-Do state before beginning work on it. You can check by looking at the Projects section of the sidebar for where it is on the Roadmap.">
+<meta property="article:section" content="Documentation">
+</head>
+<body>
+<div class=container>
+<header class=header>
+<span class=header__inner>
+<a href=/ style=text-decoration:none>
+<div class=logo>
+<span class=logo__mark>></span>
+<span class=logo__text>Spike-2</span>
+<span class=logo__cursor>
+</span>
+</div>
+</a>
+<span class=header__right>
+<nav class=menu>
+<ul class=menu__inner><li><a href=/spike-2.github.io/docs>Documentation</a></li>
+</ul>
+</nav>
+<span class=menu-trigger><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+</span>
+</span>
+</span>
+</header>
+<div class=content>
+<main class=post>
+<div class=post-info>
+</p>
+</div>
+<article>
+<h2 class=post-title><a href=spike-2.github.io/docs/contributing/submitting-a-pull-request/>Submitting a Pull Request</a></h2>
+<div class=post-content>
+<p>So, you want to add a new feature in Spike, eh? It&rsquo;s a fairly simple endeavor, but please be sure to follow instructions carefully so we get all the information we need to approve this feature!</p>
+<h2 id=before-you-begin-work-on-an-existing-issue>Before You Begin Work on an Existing Issue</h2>
+<p>Please make sure that an Issue is in the <code>Accepted/To-Do</code> state before beginning work on it. You can check by looking at the Projects section of the sidebar for where it is on the Roadmap. Issues still in the <code>Ideas</code> state haven&rsquo;t been considered by the maintainers, so there&rsquo;s a chance those requests could be denied.</p>
+<p>If you&rsquo;re actively working on an Issue that&rsquo;s in <code>Accepted/To-Do</code>, please leave a comment indicating such, and we&rsquo;ll move it to <code>In Progress</code> so others don&rsquo;t also work on it unnecessarily!</p>
+<h2 id=code-formatting>Code Formatting</h2>
+<p>We use <code>prettier</code> for formatting code. Our settings are present in <code>package.json</code>: the defaults. Please also format your code using this tool before submitting a PR. Note that some of our files may not be formatted with prettier currently, but will be formatted when they&rsquo;re next edited.</p>
+<p>To install in VS Code, open the Command Pallette (<code>CTRL + P</code> on Windows/Linux, <code>SHIFT + CMD + P</code> on Mac), then enter</p>
+<div class=highlight><pre tabindex=0 style=color:#ccc;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>ext install esbenp.prettier-vscode
+</code></pre></div><p>The workspace settings present in our repository will automatically set prettier as the code formatter and enable formatting on save.</p>
+<h2 id=submitting-the-pull-request>Submitting the Pull Request</h2>
+<p>To submit a Pull Request, visit <a href=https://github.com/jwMaxwell/Spike-2/compare>this link</a>, or select &ldquo;Pull requests&rdquo; from the menu. You&rsquo;ll be presented with a template containing a few important questions to answer. Not all questions will pertain to all PRs.</p>
+<div class=highlight><pre tabindex=0 style=color:#ccc;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-md data-lang=md><span style=color:navy>&lt;!-- Thanks for taking the time to work on a patch! Please fill in the following. --&gt;</span>
+<span style=color:navy>&lt;!-- We&#39;ll be in touch if we need any other information. --&gt;</span>
+<span style=color:navy>&lt;!-- Once submitted, follow this PR&#39;s progress on the project board. --&gt;</span>
+<span style=color:navy>&lt;!-- Notes like this are comments and won&#39;t appear in the PR. --&gt;</span>
+
+<span style=font-weight:700>**Related bugs/feature requests**</span>
+<span style=color:navy>&lt;!-- e.g. Resolves </span>#2<span style=color:navy> --&gt;</span>
+<span style=color:navy>&lt;!-- New bullet point for each issue if there&#39;s more than one. --&gt;</span>
+</code></pre></div><p>Link this PR to any issues this implements. For example&mldr;</p>
+<div class=highlight><pre tabindex=0 style=color:#ccc;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-md data-lang=md>+ Resolves #2
++ Resolves #6
+</code></pre></div><div class=highlight><pre tabindex=0 style=color:#ccc;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-md data-lang=md>**Describe the changes**
+<span style=color:navy>&lt;!-- A clear, concise description of the changes. --&gt;</span>
+</code></pre></div><p>I altered the core plugin to add this functionality.</p>
+<div class=highlight><pre tabindex=0 style=color:#ccc;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-md data-lang=md>**Expected behavior**
+<span style=color:navy>&lt;!-- A clear, concise description of what you expect to happen. --&gt;</span>
+</code></pre></div><p>Running <code>$command</code> should print out an &ldquo;I&rsquo;m a teapot&rdquo; message.</p>
+<div class=highlight><pre tabindex=0 style=color:#ccc;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-md data-lang=md>**Screenshots**
+<span style=color:navy>&lt;!-- If applicable, add screenshots to help explain your problem --&gt;</span>
+</code></pre></div><p>You can attach files by dragging-and-dropping them onto the editor, or by pasting them.</p>
+<div class=highlight><pre tabindex=0 style=color:#ccc;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-md data-lang=md>**New npm dependencies**
+<span style=color:navy>&lt;!-- If there are new npm dependencies, list them below with their versions --&gt;</span>
+<span style=color:navy>&lt;!-- Make sure changes to package.json and package-lock.json are committed as well --&gt;</span>
+</code></pre></div><p>List any new packages you installed. We should be able to install them with <code>npm install</code> with no issue.</p>
+<ul>
+<li>DiscordJS version 2500</li>
+<li>NewPackage version 2</li>
+</ul>
+<div class=highlight><pre tabindex=0 style=color:#ccc;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-md data-lang=md>**Testing Instructions**
+<span style=color:navy>&lt;!-- Instructions to thoroughly test this patch. --&gt;</span>
+</code></pre></div><p>Write clear instructions to thoroughly test your contribution. PRs lacking adequate testing instructions will be closed and not investigated further. Instructions like switching to the feature branch, enabling a plugin, and <code>npm install</code> can be left out.</p>
+<ul>
+<li><input disabled type=checkbox> Run <code>$command</code></li>
+<li><input disabled type=checkbox> Verify that <code>I'm a teapot</code> shows as a response</li>
+<li><input disabled type=checkbox> Verify that <code>$help</code> shows the new <code>$command</code></li>
+<li><input disabled type=checkbox> Verify that <code>$help command</code> shows the appropriate help text</li>
+</ul>
+<div class=highlight><pre tabindex=0 style=color:#ccc;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-md data-lang=md>**Additional context**
+<span style=color:navy>&lt;!-- Add any other context about the problem here --&gt;</span>
+</code></pre></div><p>If you have anything else to add, do so here.</p>
+<p>Once you&rsquo;ve completed this, Click the green <code>Create pull request</code> button. After a minute or two, the GitHub bot will add it to our project board, and you can track the progress of it from within the Issue. Please also be on the lookout for comments from the development team asking for more information or updating progress! Thank you for taking the time to make Spike better!</p>
+<p>To learn more about the states a PR can be in on the project board, visit the <a href=/docs/contributing/project-board>Project Board Documentation</a>.</p>
+</div>
+</article>
+<hr>
+<div class=post-info>
+<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83.0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7" y2="7"/></svg>
+<span class=tag><a href=spike-2.github.io/tags/submitting-a-pull-request/>Submitting a Pull Request</a></span>
+<span class=tag><a href=spike-2.github.io/tags/contributing/>Contributing</a></span>
+</p>
+<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>
+<span class=tag><a href=spike-2.github.io/categories/documentation/>Documentation</a></span>
+</p>
+</div>
+</main>
+</div>
+<footer class=footer>
+<div class=footer__inner>
+<div class=footer__content>
+<span>&copy; 2021</span>
+<span><a href=spike-2.github.io>Spike Bot Maintainers</a></span>
+<span><a target=_blank href=https://github.com/spike-2>GitHub</a></span>
+</div>
+</div>
+</footer>
+</div>
+<script type=text/javascript src=/spike-2.github.io/bundle.min.599099f1f14b78b657d524b28e10e0c5098e7cd46e9c7aed73d577068a276c3ff1bb234cbf29cb313333e83cf411727b43157c91ce5b809e2ffc81664614608e.js integrity="sha512-WZCZ8fFLeLZX1SSyjhDgxQmOfNRunHrtc9V3BoonbD/xuyNMvynLMTMz6Dz0EXJ7QxV8kc5bgJ4v/IFmRhRgjg=="></script>
+</body>
+</html>
