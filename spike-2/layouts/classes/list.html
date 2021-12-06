@@ -1,0 +1,46 @@
+{{ define "main" }}
+    <main class="posts">
+        <h1>{{ .Title }}</h1>
+
+        {{ if .Content }}
+            <div class="content">{{ .Content }}</div>
+        {{ end }}
+
+        <!-- create a list with all uppercase letters -->
+        {{ $letters := split "ABCDEFGHIJKLMNOPQRSTUVWXYZ" "" }}
+
+        <!-- range all pages sorted by their title -->
+        {{ range .Data.Pages.ByTitle }}
+            <!-- get the first character of each title. Assumes that the title is never empty! -->
+            {{ $classCode := index (findRE "[A-Za-z]+[0-9]" .Title 1) 0 | default .Title | upper }}
+            
+            <!-- in case $firstChar is a letter -->
+            {{ if substr $classCode 0 1 | in $letters }}
+                <!-- get the current letter -->
+                {{ $curCode := $.Scratch.Get "curCode" }}
+                <!-- if $curLetter isn't set or the letter has changed -->
+                {{ if ne $classCode $curCode }}
+                <!-- update the current letter and print it -->
+                {{ if isset $.Scratch.Values "curCode" }}
+                        </ul>
+                    </div>
+                {{ end }}
+                {{ $.Scratch.Set "curCode" $classCode }}
+                <div class="posts-group">
+                    <div class="post-year">{{ $classCode }}XX</div>
+
+                    <ul class="posts-list">
+                {{ end }}
+                <li class="post-item">
+                    <a href="{{.Permalink}}">
+                        <span class="post-title">{{.Title}}</span>
+                    </a>
+                </li>
+            {{ end }}
+        {{ end }} 
+        {{ if isset $.Scratch.Values "curCode" }}
+                </ul>
+            </div>     
+        {{ end }}    
+    </main>
+{{ end }}

@@ -1,0 +1,6 @@
+spike-2/public
+spike-2/resources/_gen/
+.DS_Store
+node_modules
+dist
+tmp

@@ -1,0 +1,3 @@
+[submodule "spike-2/themes/hello-friend-ng"]
+	path = spike-2/themes/hello-friend-ng
+	url = https://github.com/rhazdon/hugo-theme-hello-friend-ng.git

@@ -1,0 +1,56 @@
+baseurl: spike-2.github.io
+title: Spike
+author: 
+  name: Spike Bot Maintainers
+languageCode: en-us
+theme: hello-friend-ng
+style:
+  - css/custom.css
+readOtherPosts: Read other posts
+markup:
+  highlight:
+    anchorLineNos: false
+    codeFences: true
+    guessSyntax: false
+    h1_lines: ""
+    lineAnchors: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: true
+    style: vim
+    tabWidth: 4
+params:
+  dateform: 'Jan 2, 2006'
+  dateformShort: Jan 2
+  dateformNum: '2006-01-02'
+  dateformNumTime: '2006-01-02 15:04'
+  homeSubtitle: A Discord Chat Bot
+  disableReadOtherPosts: true
+  enableSharingButtons: false
+  description: A Discord Chat Bot
+  keywords: 'discord, bot'
+  logo:
+    logoText: Spike-2
+    logoHomeLink: /
+  images:
+    - ''
+  footer:
+    trademark: true
+    author: true
+    copyright: false
+    topText:
+      - <a target="_blank" href="https://github.com/spike-2">GitHub</a>
+paginate: 10
+taxonomies:
+  category: categories
+  tag: tags
+  class: classes
+menu:
+  main:
+    - identifier: docs
+      name: Documentation
+      url: /docs
+    # - identifier: teachme
+    #   name: Teach Me...
+    #   url: /teachme
