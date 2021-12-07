@@ -28,6 +28,7 @@ params:
   homeSubtitle: A Discord Chat Bot
   disableReadOtherPosts: true
   enableSharingButtons: false
+  enableThemeToggle: true
   description: A Discord Chat Bot
   keywords: 'discord, bot'
   logo:
