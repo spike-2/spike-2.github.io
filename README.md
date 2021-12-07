@@ -25,6 +25,7 @@ For your convenience, here are some sample commands:
 
 + Posts: `hugo new posts/title.md`
 + Documentation: `hugo new docs/manual-pages/plugin-name.md`
++ Changelog: `hugo new changelog/year/mm-dd.md`
 + Teach Me: `hugo new teachme/language.md`
 + Redirect Links: `hugo new links/title.md`
 
