@@ -20,6 +20,8 @@ markup:
     noClasses: true
     style: vim
     tabWidth: 4
+permalinks:
+  changelog: /changelog/:2006-:01-:02/
 params:
   dateform: 'Jan 2, 2006'
   dateformShort: Jan 2
@@ -52,6 +54,9 @@ menu:
     - identifier: docs
       name: Documentation
       url: /docs
+    - identifier: changelog
+      name: Changelog
+      url: /changelog
     # - identifier: teachme
     #   name: Teach Me...
     #   url: /teachme
